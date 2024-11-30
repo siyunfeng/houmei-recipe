@@ -6,6 +6,8 @@
     --box-shadow-button: 3px 3px 4px var(--color-brown);
     --box-shadow-container: 3px 3px 15px var(--color-brown-transparent);
     --font-family-fancy: Georgia, 'Times New Roman', Times, serif;
+    --font-family-primary: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    --font-family-secondary: monospace;
 }
 
 * {
@@ -32,6 +34,14 @@ button {
 .website-title {
     text-align: center;
     margin: 3rem 0 0;
+}
+
+.website-title h1 {
+    font-family: var(--font-family-primary);
+}
+
+.font-secondary {
+    font-family: var(--font-family-secondary);
 }
 
 .main-page-container {
