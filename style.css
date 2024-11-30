@@ -5,14 +5,15 @@
     --color-primary-bg: antiquewhite;
     --box-shadow-button: 3px 3px 4px var(--color-brown);
     --box-shadow-container: 3px 3px 15px var(--color-brown-transparent);
+    --font-family-fancy: Georgia, 'Times New Roman', Times, serif;
 }
 
 * {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: var(--font-family-fancy);
 }
 
 body {
@@ -54,6 +55,15 @@ ul.course-list {
     padding: 0 0 0 16px;
 }
 
+ul.course-list li {
+    margin: 0 0 8px;
+}
+
+ul.course-list a:hover {
+    color: var(--color-brown);
+    font-weight: 600;
+}
+
 .recipe-page-container {
     display: flex;
     flex-direction: column;
@@ -77,12 +87,14 @@ ul.course-list {
     margin: 32px auto;
 }
 
-.serving, .cooking-time {
-    font-weight: bold;
+.serving, .cooking-time span{
+    font-family: var(--font-family-fancy);
+    font-weight: 500;
+    margin: 0 0 8px;
 }
 
 .cooking-time span {
-    padding: 0 20px 0 0;
+    padding: 0 24px 0 0;
 }
 
 .recipe-note {
@@ -97,4 +109,10 @@ ul.course-list {
 
 .ingredients input, .instructions input {
     justify-content: flex-start;
+    float: left;
+}
+
+.ingredients label, .instructions label {
+    margin: 0 0 0 24px;
+    display: block;
 }
