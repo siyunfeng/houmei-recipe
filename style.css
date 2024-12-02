@@ -52,7 +52,7 @@ button {
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 24px;
-    margin: 48px auto;
+    margin: 48px 16px;
 }
 
 .course-container {
@@ -129,4 +129,29 @@ ul.course-list li:hover {
 .ingredients label, .instructions label {
     margin: 0 0 0 24px;
     display: block;
+}
+
+/* Footer */
+footer {
+    clear: both;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    margin: 48px auto 0;
+    border-top: 1px solid var(--color-brown-transparent);
+}
+
+.footer-container p, .footer-container a {
+    font-family: var(--font-family-secondary);
+    margin: 30px 0;
+}
+
+.footer-container a:hover {
+    color: var(--color-brown);
+    font-weight: bold;
+    text-decoration: wavy underline var(--color-brown);
 }
