@@ -101,6 +101,24 @@ ul.course-list li:hover {
     box-shadow: var(--box-shadow-container);
 }
 
+.recipe-img-container {
+    width: 280;
+    height: 280px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img.recipe-img {
+    justify-content: center;
+    width: 280px;
+    height: 280px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: var(--box-shadow-container);
+}
+
 .serving, .cooking-time span{
     font-family: var(--font-family-fancy);
     font-weight: 500;
@@ -113,6 +131,7 @@ ul.course-list li:hover {
 
 .recipe-note {
     margin: 10px auto;
+    font-style: italic;
 }
 
 .ingredients, .instructions {
